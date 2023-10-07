@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7898856973964217473}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpHeight: 9
-  playerTransform: {fileID: 7549796623793018191}
   rb: {fileID: 6021510186618607557}
   groundCheck: {fileID: 5623654835993089027}
   groundLayer:
