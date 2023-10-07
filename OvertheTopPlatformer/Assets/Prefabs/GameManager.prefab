@@ -200,19 +200,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4f261d2608fb242b3d68ff78d3c41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WinScreen:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5119891343870300455, guid: 7703176b97e60af4aa8e1712f2e3f528, type: 3}
-        m_TargetAssemblyTypeName: WinLoseMenus, Assembly-CSharp
-        m_MethodName: ShowWinMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   timerText: {fileID: 0}
