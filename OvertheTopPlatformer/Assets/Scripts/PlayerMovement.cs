@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpHeight;
     
-    [SerializeField] private Transform playerTransform;
+    //[SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private Transform groundCheck;
