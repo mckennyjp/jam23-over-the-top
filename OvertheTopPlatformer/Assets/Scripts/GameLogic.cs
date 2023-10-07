@@ -4,9 +4,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
+    public UnityEvent WinScreen;
+
     [SerializeField] private TextMeshProUGUI timerText;
     private bool timerActive = true;
     
@@ -23,5 +26,15 @@ public class GameLogic : MonoBehaviour
     public void OnWin(){
         Debug.Log("You Won");
         timerActive = false;
+        WinScreen.Invoke();
+    }
+
+    public void Continue(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Quit(){
+        Application.Quit();
+        Debug.Log("Gamequit");
     }
 }
