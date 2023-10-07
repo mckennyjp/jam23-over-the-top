@@ -204,8 +204,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0a6905846cb6045b96387fdb34b713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Won:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4932941232329902727, guid: 05a0e927cfedc404e98556af2ac3b1b6, type: 3}
+        m_TargetAssemblyTypeName: GameLogic, Assembly-CSharp
+        m_MethodName: OnWin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Lost:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4932941232329902727, guid: 05a0e927cfedc404e98556af2ac3b1b6, type: 3}
+        m_TargetAssemblyTypeName: GameLogic, Assembly-CSharp
+        m_MethodName: OnLoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   speed: 5
-  jumpHeight: 9
+  jumpHeight: 12
   rb: {fileID: 6021510186618607557}
   groundCheck: {fileID: 5623654835993089027}
   groundLayer:
