@@ -26,7 +26,12 @@ public class GameLogic : MonoBehaviour
     public void OnWin(){
         Debug.Log("You Won");
         timerActive = false;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //WinScreen.Invoke();
+    }
+
+    public void OnLoss(){
+        Debug.Log("You Lost");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

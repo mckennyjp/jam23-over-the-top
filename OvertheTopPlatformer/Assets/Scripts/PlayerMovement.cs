@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
     public UnityEvent Won;
+    public UnityEvent Lost;
     
     private float horizontal;
     [SerializeField] private float speed;
@@ -38,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "WinCondition"){
             Won.Invoke();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col){
+        if(col.gameObject.tag == "Crusher"){
+            Lost.Invoke();
         }
     }
 }

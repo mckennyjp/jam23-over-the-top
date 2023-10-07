@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WallManager : MonoBehaviour
 {
     [SerializeField] private Transform wallTransform;
     [SerializeField] private float wallSpeed;
-    
+
     void Start()
     {
         
