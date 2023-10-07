@@ -205,8 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpHeight: 9
-  playerTransform: {fileID: 7549796623793018191}
+  jumpHeight: 12
   rb: {fileID: 6021510186618607557}
   groundCheck: {fileID: 5623654835993089027}
   groundLayer:
