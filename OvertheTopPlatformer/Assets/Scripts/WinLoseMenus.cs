@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinLoseMenus : MonoBehaviour
 {
-    [SerializeField] private GameObject winMenu;
+    [SerializeField] GameObject winMenu;
 
     void Start(){
         winMenu.SetActive(false);
@@ -12,5 +12,9 @@ public class WinLoseMenus : MonoBehaviour
     
     public void ShowWinMenu(){
         winMenu.SetActive(true);
+        //for(int i = 0; i < winMenu.Length; i++){
+        //    winMenu[i].SetActive(true);
+        //}
+        Debug.Log("show win menu");
     }
 }
