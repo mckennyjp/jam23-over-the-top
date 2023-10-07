@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
-    public UnityEvent WinScreen;
+    //public UnityEvent WinScreen;
 
     [SerializeField] private TextMeshProUGUI timerText;
     private bool timerActive = true;
@@ -26,16 +26,7 @@ public class GameLogic : MonoBehaviour
     public void OnWin(){
         Debug.Log("You Won");
         timerActive = false;
-        WinScreen.Invoke();
-    }
-
-    public void Continue(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Next Level");
-    }
-
-    public void Quit(){
-        Application.Quit();
-        Debug.Log("Gamequit");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //WinScreen.Invoke();
     }
 }
