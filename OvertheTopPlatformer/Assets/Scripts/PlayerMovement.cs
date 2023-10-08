@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] AudioSource jumpSound;
     [SerializeField] AudioSource jetpackSound;
     [SerializeField] AudioSource jetpackSound2;
+
+    [SerializeField] ParticleSystem jetpackParticles;
     
     //[SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody2D rb;
@@ -79,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, jetpackPower);
         jetpackSound.Play();
         jetpackSound2.Play();
+        jetpackParticles.Play();
     }
 
     private void UpdateAnim(){
