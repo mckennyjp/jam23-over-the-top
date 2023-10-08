@@ -457,6 +457,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1671476531520312877, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
+      propertyPath: wallSpeed
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671476531520312877, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
       propertyPath: crusherTransform
       value: 
       objectReference: {fileID: 874691292}
