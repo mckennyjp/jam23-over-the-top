@@ -9,12 +9,7 @@ public class WallManager : MonoBehaviour
     [SerializeField] private Transform wallTransform;
     [SerializeField] private float wallSpeed;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
+    void FixedUpdate()
     {
         wallTransform.position = new Vector3(wallTransform.position.x, wallTransform.position.y + wallSpeed, 0f);
     }
