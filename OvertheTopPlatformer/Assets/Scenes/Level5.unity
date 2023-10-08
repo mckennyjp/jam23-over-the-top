@@ -701,6 +701,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4436666748070708637, guid: 0980a0318d737604180bedd215fcc9cc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4436666748070708637, guid: 0980a0318d737604180bedd215fcc9cc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5082715369696763976, guid: 0980a0318d737604180bedd215fcc9cc, type: 3}
       propertyPath: m_Name
       value: Platform (5)
@@ -810,6 +818,14 @@ PrefabInstance:
       propertyPath: wallTransform
       value: 
       objectReference: {fileID: 531563864}
+    - target: {fileID: 6132781572949170764, guid: 971d3970df584ad43b85bb4fda7616b5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132781572949170764, guid: 971d3970df584ad43b85bb4fda7616b5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1073,6 +1089,14 @@ PrefabInstance:
     - target: {fileID: 1632857997117444409, guid: 25924a04c2e237e4a9f4c5930c581722, type: 3}
       propertyPath: timeToFlip
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087901459489902224, guid: 25924a04c2e237e4a9f4c5930c581722, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087901459489902224, guid: 25924a04c2e237e4a9f4c5930c581722, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2428561941776073260, guid: 25924a04c2e237e4a9f4c5930c581722, type: 3}
       propertyPath: m_Name
