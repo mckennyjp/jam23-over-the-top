@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     [SerializeField] private float speed;
     [SerializeField] private float jumpHeight;
+    [SerializeField] private float jetpackPower;
     
     //[SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody2D rb;
@@ -39,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "WinCondition"){
             Won.Invoke();
+        } else if(col.tag == "Jetpack"){
+            Jetpack();
+            //Destroy(col,0f);
         }
     }
 
@@ -46,5 +50,10 @@ public class PlayerMovement : MonoBehaviour
         if(col.gameObject.tag == "Crusher"){
             Lost.Invoke();
         }
+    }
+
+    private void Jetpack(){
+        Debug.Log("Jetpack gotten");
+        rb.velocity = new Vector2(rb.velocity.x, jetpackPower);
     }
 }
