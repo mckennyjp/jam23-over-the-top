@@ -6,6 +6,8 @@ public class OnOff2 : MonoBehaviour
 {
     [SerializeField] private Transform Origin;
 
+    [SerializeField] private int timeToFlip;
+
     private int Ticks = -1;
     void Update()
     {
@@ -15,11 +17,11 @@ public class OnOff2 : MonoBehaviour
             transform.position = new Vector2(Origin.position.x - 20000, Origin.position.y);
             Ticks = 0;
         }
-        if (Ticks == 2000)
+        if (Ticks == timeToFlip/2)
         {
             transform.position = new Vector2(Origin.position.x, Origin.position.y);
         }
-        if (Ticks == 4000)
+        if (Ticks == timeToFlip)
         {
             transform.position = new Vector2(Origin.position.x - 20000, Origin.position.y);
             Ticks = 0;
