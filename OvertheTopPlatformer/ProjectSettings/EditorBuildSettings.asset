@@ -17,6 +17,66 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScreen1.unity
     guid: 40aa836b11565624c9dd008893da057b
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: ef6e82fd974a886408d2a2268231ceda
+  - enabled: 1
+    path: Assets/Scenes/WinScreen2.unity
+    guid: fea994b3dd8ecb940b802e4ff0858f69
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: ae8edfb64c3c91b4990444e47d415173
+  - enabled: 1
+    path: Assets/Scenes/WinScreen3.unity
+    guid: 3228c8302d195c44baac5638e6603b28
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 5ac7c7a25dcda0a4ca4f5568c7746d1f
+  - enabled: 1
+    path: Assets/Scenes/WinScreen4.unity
+    guid: 8cd4240ab652b4c42b34e263d0e8bd65
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 5fb159e85ae98d54c9b4526a91994a38
+  - enabled: 1
+    path: Assets/Scenes/WinScreen5.unity
+    guid: b30d334fa9d5b7844b9d726857eb0476
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 5dad207a8c63d3c40897e4506f7a4004
+  - enabled: 1
+    path: Assets/Scenes/WinScreen6.unity
+    guid: dc41bb0c6df3d424e82fd612080bd8bb
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: 3cbed82e2dd95954d87a34e6d39041ab
+  - enabled: 1
+    path: Assets/Scenes/WinScreen7.unity
+    guid: 5a3e3bcb09626a042ba469b2d5436875
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: 7768c3f0a163ce046ad7666681e873b8
+  - enabled: 1
+    path: Assets/Scenes/WinScreen8.unity
+    guid: 81b560e81103334448c3a59c212be5a5
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: ff542001c2cd1e649980c1f3829fa104
+  - enabled: 1
+    path: Assets/Scenes/WinScreen9.unity
+    guid: 06404b9cbeaf8e942921bb31b3e20e51
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: 399b67ee685b05f43b3b0bc2297504f9
+  - enabled: 1
+    path: Assets/Scenes/WinScreen10.unity
+    guid: c29bfcde6d6c6ba45bc32eedec0e6275
+  - enabled: 1
+    path: Assets/Scenes/Level11.unity
+    guid: 9168ff7753c93dc4da4431817897695e
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: d01bf3893a23a034c8930b56ae6a4de2
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
