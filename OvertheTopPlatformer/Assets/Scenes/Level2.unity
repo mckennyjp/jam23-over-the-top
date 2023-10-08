@@ -196,6 +196,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2122041885534798337, guid: 05a0e927cfedc404e98556af2ac3b1b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318184157621916361, guid: 05a0e927cfedc404e98556af2ac3b1b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4932941232329902727, guid: 05a0e927cfedc404e98556af2ac3b1b6, type: 3}
       propertyPath: timerText
       value: 
