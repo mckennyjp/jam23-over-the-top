@@ -1098,6 +1098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1671476531520312877, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
+      propertyPath: wallSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 6628864439874509365, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
       propertyPath: m_Name
       value: Walls
@@ -1108,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7663600567122182950, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0336576
+      value: 1.033658
       objectReference: {fileID: 0}
     - target: {fileID: 7663600567122182950, guid: c240637a0a3ce0241b37cc3a48123b55, type: 3}
       propertyPath: m_LocalPosition.z
