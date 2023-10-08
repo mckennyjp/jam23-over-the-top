@@ -236,6 +236,7 @@ MonoBehaviour:
         m_CallState: 2
   speed: 5
   jumpHeight: 12
+  jetpackPower: 35
   rb: {fileID: 6021510186618607557}
   groundCheck: {fileID: 5623654835993089027}
   groundLayer:
