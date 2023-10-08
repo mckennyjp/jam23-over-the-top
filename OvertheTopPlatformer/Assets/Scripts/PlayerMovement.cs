@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpHeight;
     [SerializeField] private float jetpackPower;
+
+    [SerializeField] AudioSource jumpSound;
+    [SerializeField] AudioSource jetpackSound;
+    [SerializeField] AudioSource jetpackSound2;
     
     //[SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody2D rb;
@@ -26,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            jumpSound.Play();
         }
     }
 
@@ -55,5 +60,7 @@ public class PlayerMovement : MonoBehaviour
     private void Jetpack(){
         Debug.Log("Jetpack gotten");
         rb.velocity = new Vector2(rb.velocity.x, jetpackPower);
+        jetpackSound.Play();
+        jetpackSound2.Play();
     }
 }
