@@ -24,14 +24,31 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    private SpriteRenderer playerSprite;
+    private Animator anim;
+    private enum MovementState {idle, run, jump, fall};
+
+    private void Start(){
+        playerSprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+    }
+    
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if(horizontal > 0){
+            playerSprite.flipX = false;
+        } else if (horizontal < 0){
+            playerSprite.flipX = true;
+        }
 
         if(Input.GetButtonDown("Jump") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             jumpSound.Play();
         }
+
+        UpdateAnim();
     }
 
     void FixedUpdate(){
@@ -62,5 +79,21 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, jetpackPower);
         jetpackSound.Play();
         jetpackSound2.Play();
+    }
+
+    private void UpdateAnim(){
+        MovementState state;
+        if(horizontal != 0){
+            state = MovementState.run;
+        } else{
+            state = MovementState.idle;
+        }
+
+        if(rb.velocity.y > .1f){
+            state = MovementState.jump;
+        } else if(rb.velocity.y < -.1f){
+            state = MovementState.fall;
+        }
+        anim.SetInteger("state", (int)state);
     }
 }
